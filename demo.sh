@@ -1,6 +1,6 @@
 #!/bin/bash
 
-IMAGE_IDX=0002
+IMAGE_IDX=0003
 
 eog /home/powerhorse/Documents/visualAlignmentComparison/1634152465.40384/${IMAGE_IDX}.jpg &
 

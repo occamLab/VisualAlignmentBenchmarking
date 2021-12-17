@@ -170,7 +170,7 @@ int main(int argc, char** argv) {
         outputInfo["tx"] = ret.tx;
         outputInfo["ty"] = ret.ty;
         outputInfo["tz"] = ret.tz;
-        outputInfo["triangulatedPoints"] = ret.triangulatedPoints;
+        //outputInfo["triangulatedPoints"] = ret.triangulatedPoints;
         outputInfo["image1MatchCoordinates"] = ret.image1MatchCoordinates;
         outputInfo["image2MatchCoordinates"] = ret.image2MatchCoordinates;
         outputInfo["cameraIntrinsicsRowMajor"] = jCamera["intrinsics"];

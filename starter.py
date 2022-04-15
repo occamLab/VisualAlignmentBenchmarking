@@ -2,20 +2,24 @@
 
 #/home/powerhorse/Documents/visualAlignmentComparison/1635895978.43579
 
-# TODO: 
+# TODO: Add documentation and create a way to handle outputs and merge them into one dataframe.
 
+# Running this file will use several different visual alignment methods on a set of camera/alignment images and generate several comparison photos. The path above is an example path to one of the files you can run this visual alignment comparison on. The output can be found in the output folder in the same parent folder as this file under the long number name at the end of the path mentioned above.
+ 
 from os import system
 import sys
 from glob import glob
 import os
 import re
 
+#Splits the metadata path to get its id (2nd to last character)
 def get_path_id(path):
     norm_path = os.path.normpath(path)
     path_list = norm_path.split(os.sep)
     path_id = path_list[-2]
     return path_id
 
+#Splits the metadata path to get the image id (last character) with "\d" + last character
 def get_image_id(path):
     norm_path = os.path.normpath(path)
     path_list = norm_path.split(os.sep)
@@ -40,7 +44,7 @@ if __name__ == '__main__':
         camera_image = camera_metadata.replace('_metadata.json', '.jpg')
         align_image = align_metadata.replace('_metadata.json', '.jpg')
 
-        #TODO: smoe images are not present. Maybe saving them in local storage and uploading later. 
+        #TODO: some images are not present. Maybe saving them in local storage and uploading later. 
         
         total_exp = 5 # TODO: make this a dict that has this
 

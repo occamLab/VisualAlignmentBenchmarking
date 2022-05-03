@@ -8,11 +8,11 @@ To run the command type: python ./starter.py /home/powerhorse/Documents/visualAl
 The code will take every picture in the folder and run the different Visual Alignment algorithms. It then stores the data in a folder (/VisualAlignmentComparison/output/1635895978.43579) where each image has a folder with five subfolders for each algorithm. These subfolders have the image as well as the .json file. It will also tell you real time if the algorithm was able to achieve enough matches to align or if the algorithm was unable to align the images.
 
 Folder # = Algorithm Used
-0 = SIFT
-1 = ORB
-2 = AKAZE MLDB Upright
-3 = AKAZE MLDB
-4 = SIFT Upright
+- 0 = SIFT
+- 1 = ORB
+- 2 = AKAZE MLDB Upright
+- 3 = AKAZE MLDB
+- 4 = SIFT Upright
 
 process\_matches.py:
 

@@ -3,7 +3,7 @@ This readme contains the information on what each python file does including inp
 starter.py:
 
 To run the command type: python ./starter.py /home/powerhorse/Documents/visualAlignmentComparison/1635895978.43579
-- The long number is the folder that holds the picture data of a specific route. You can find which specific route it is in Google Drive folder.
+The long number is the folder that holds the picture data of a specific route. You can find which specific route it is in Google Drive folder.
 
 The code will take every picture in the folder and run the different Visual Alignment algorithms. It then stores the data in a folder (/VisualAlignmentComparison/output/1635895978.43579) where each image has a folder with five subfolders for each algorithm. These subfolders have the image as well as the .json file. It will also tell you real time if the algorithm was able to achieve enough matches to align or if the algorithm was unable to align the images.
 
